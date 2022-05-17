@@ -11,12 +11,17 @@ organism{
 }
 
 # combat
-phsics{
-  {:(?(ak>df)b.hp=b.hp-10;)
-    {:ak;v:d(6);}
-    {:df;v:d(4);}
+on('pr1');
+hit{
+  {:(?(a>b){sub('a.hp',10);})
+    {:a;v:d(6);}
+    {:b;v:d(4);}
   }
 }
-iam('phsics');on('pr1');
->ak+df;
-do(me.pr1);
+shell{
+  {:(?(a>b){iam('hit');add(a,b);do(me.pr1);})
+    {:a;v:d(6);}
+    {:b;v:d(4);}
+  }
+}
+iam('shell');add(a,b);do(me.pr1);
