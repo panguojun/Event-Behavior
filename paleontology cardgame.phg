@@ -12,9 +12,9 @@ organism{
 
 # combat
 phsics{
-{act:mov;
-{:atk;v:d(6);}
-{:dfe;v:d(4);}
+{?(ak>df)b.hp-=10;
+{:ak;v:d(6);}
+{:df;v:d(4);}
 }
 }
 
