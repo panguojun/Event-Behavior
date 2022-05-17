@@ -17,7 +17,6 @@ phsics{
 {:df;v:d(4);}
 }
 }
-
-iam('hit');on('pr1');
->a+b;
->me.act;
+iam('phsics');on('pr1');
+>ak+df;
+do(me.pr1);
