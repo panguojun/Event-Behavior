@@ -13,7 +13,7 @@ organism{
 # combat
 on('pr1');
 hit{
-  {:(?(a>b){sub('a.hp',10);})
+  {:(?(a>b){sub(a.hp,10);})
     {:a;v:d(6);}
     {:b;v:d(4);}
   }
