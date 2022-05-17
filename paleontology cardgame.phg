@@ -12,10 +12,10 @@ organism{
 
 # combat
 phsics{
-{:(?(ak>df)b.hp-=10;)
-{:ak;v:d(6);}
-{:df;v:d(4);}
-}
+  {:(?(ak>df)b.hp-=10;)
+    {:ak;v:d(6);}
+    {:df;v:d(4);}
+  }
 }
 iam('phsics');on('pr1');
 >ak+df;
