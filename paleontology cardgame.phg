@@ -9,3 +9,15 @@ organism{
       Omnivores{}
   }
 }
+
+# combat
+phsics{
+{act:mov;
+{:atk;v:d(6);}
+{:dfe;v:d(4);}
+}
+}
+
+iam('hit');on('pr1');
+>a+b;
+>me.act;
