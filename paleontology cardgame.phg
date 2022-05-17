@@ -24,4 +24,4 @@ shell{
     {:b;v:d(4);}
   }
 }
-iam('shell');add(a,b);do(me.pr1);
+iam(shell);add(a,b);do(me.pr1);
