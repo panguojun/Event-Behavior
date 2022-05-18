@@ -13,15 +13,15 @@ organism{
 # combat
 on('pr1');
 hit{
-  {:(?(a>b){sub(a.hp,10);})
+  {:(?(a>b){dec(a.hp,10);})
     {:a;v:d(6);}
     {:b;v:d(4);}
   }
 }
 shell{
-  {:(?(a>b){iam('hit');add(a,b);do(me.pr1);})
+  {:(?(a>b){iam('hit');parent(a,b);do(me.pr1);})
     {:a;v:d(6);}
     {:b;v:d(4);}
   }
 }
-iam(shell);add(a,b);do(me.pr1);
+iam(shell);parent(a,b);do(me.pr1);
