@@ -25,3 +25,5 @@ shell{
   }
 }
 iam(shell);parent(a,b);do(me.pr1);
+
+# 地质事件
