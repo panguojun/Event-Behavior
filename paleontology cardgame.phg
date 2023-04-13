@@ -27,3 +27,35 @@ shell{
 iam(shell);parent(a,b);do(me.pr1);
 
 # 地质事件
+evt{
+earthquake{
+magnitude: 7.0
+epicenter: 'San Francisco'
+casualties: 1000
+damage: 'severe'
+}
+volcano{
+type: 'stratovolcano'
+location: 'Mount Fuji'
+eruption_year: 1707
+eruption_intensity: 'VEI 5'
+damage: 'moderate'
+}
+landslide{
+trigger: heavy rainfall
+location: 'Mudslide Canyon'
+casualties: 20
+damage: 'minor'
+}
+sinkhole{
+cause: underground water erosion
+location: 'Florida'
+damage: 'major'
+}
+tsunami{
+trigger: undersea earthquake
+location: 'Indian Ocean'
+casualties: 230,000
+damage: 'catastrophic'
+}
+}
